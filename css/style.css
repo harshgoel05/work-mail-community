@@ -3378,9 +3378,14 @@ img.pull-right {
 }
 .ts-contact-form .contact-form .form-group .form-control {
   padding: 15px 30px;
+  margin-bottom: 60px;
   border-radius: 0;
   font-size: 14px;
   resize: none;
+}
+input,
+textarea {
+  margin-bottom: 6px;
 }
 
 /* Blog Details
@@ -4154,3 +4159,7 @@ faq-item
 }
 
 /*# sourceMappingURL=style.css.map */
+
+footer .ts-footer-social a {
+  color: white !important;
+}
