@@ -37,8 +37,7 @@
                     <div class="col-lg-8">
                         <nav class="navbar navbar-expand-lg text-lg-center justify-content-end">
 
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                                aria-label="Toggle navigation">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"><i class="icon icon-menu"></i></span>
                             </button>
                             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
@@ -75,8 +74,10 @@
                 <div class="text-center">
                     <h2>careers</h2>
                 </div>
-            </div><!-- Subpage title end -->
-        </div><!-- Page Banner end -->
+            </div>
+            <!-- Subpage title end -->
+        </div>
+        <!-- Page Banner end -->
 
         <!-- ts intro start -->
         <section class="ts-contact">
@@ -84,10 +85,10 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h2 class="section-title text-center">
-                            <span>We're recruiting for</span>
-                            OPEN POSITIONS
+                            <span>We're recruiting for</span> OPEN POSITIONS
                         </h2>
-                    </div><!-- col end-->
+                    </div>
+                    <!-- col end-->
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
@@ -98,14 +99,13 @@
                             </p>
                             <br>
                             <p>
-                                <strong>Job Details: </strong>Community Managers serve as the face of the company.
-                                They'll direct the State Managers and handle communications in all
-                                directions.
+                                <strong>Job Details: </strong>Community Managers serve as the face of the company. They'll direct the State Managers and handle communications in all directions.
                             </p>
                             <span class="count-number fa fa-paper-plane"></span>
                         </div>
                         <div class="border-shap left"></div>
-                    </div><!-- col end-->
+                    </div>
+                    <!-- col end-->
                     <div class="col-lg-4">
                         <div class="single-intro-text single-contact-feature">
                             <h3 class="ts-title" style="color: #E7015E;">State Manager</h3>
@@ -114,8 +114,7 @@
                             </p>
                             <br>
                             <p>
-                                <strong>Job Details: </strong>State Managers are responsible for the implementation of a
-                                program in a state. They'll also direct the City Managers and build strategies.
+                                <strong>Job Details: </strong>State Managers are responsible for the implementation of a program in a state. They'll also direct the City Managers and build strategies.
                             </p>
                             <span class="count-number fa fa-paper-plane"></span>
                         </div>
@@ -130,9 +129,7 @@
                             </p>
                             <br>
                             <p>
-                                <strong>Job Details: </strong>City Managers will look after the administrative processes
-                                and other operations for the city. They have to be answerable
-                                to State Managers and ideate with them.
+                                <strong>Job Details: </strong>City Managers will look after the administrative processes and other operations for the city. They have to be answerable to State Managers and ideate with them.
                             </p>
                             <span class="count-number fa fa-paper-plane"></span>
                         </div>
@@ -146,10 +143,8 @@
                             </p>
                             <br>
                             <p>
-                                <strong>Job Details: </strong>The company's new products, projects and our upcoming
-                                events are
-                                promoted through campus ambassadors. They have to make
-                                people aware of the company's ventures and have to be answerable to City Managers.
+                                <strong>Job Details: </strong>The company's new products, projects and our upcoming events are promoted through campus ambassadors. They have to make people aware of the company's ventures and have to be answerable to City
+                                Managers.
                             </p>
                             <span class="count-number fa fa-paper-plane"></span>
                         </div>
@@ -386,7 +381,7 @@
         <script src="js/wow.min.js"></script>
         <script src="js/isotope.pkgd.min.js"></script>
         <script src="js/main.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
         <script>
             var name;
@@ -402,6 +397,7 @@
             var branch;
             var resume;
             var linkedin;
+
             function submit_form() {
                 name = document.getElementById("name").value,
                     position = document.getElementById("position").value,
@@ -418,8 +414,7 @@
                     linkedin = document.getElementById("resume").value
                 if (name == "" || position == "" || mobile == "" || email == "" || college == "" || city == "" || state == "" || regno == "" || year == "" || course == "") {
                     alert("Please fill in all the details!")
-                }
-                else {
+                } else {
 
                     $.ajax({
                         type: "POST",
@@ -440,11 +435,10 @@
                             resume: resume,
                             linkedin: linkedin,
                         },
-                        success: function (res) {
+                        success: function(res) {
                             if (res == "OK") {
                                 alert("Thanks! We have receeived your response");
-                            }
-                            else {
+                            } else {
                                 alert("Server Error");
                             }
                         }
@@ -453,7 +447,6 @@
                     $('input[type="text"]').val('');
                 }
             }
-
         </script>
     </div>
     <!-- Body inner end -->
