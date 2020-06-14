@@ -1782,7 +1782,7 @@ img.pull-right {
 .ts-experiences .exp-img {
     min-height: 480px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     margin: 80px;
 }
